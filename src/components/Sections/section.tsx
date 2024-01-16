@@ -1,5 +1,11 @@
 import styled from "styled-components"
 
+interface SectionProps {
+    id: string;
+    title: string;
+    content: string;
+    }
+
 const TagSection = styled.section`
     display: flex;
     min-height: 100vh;
@@ -21,17 +27,13 @@ const Description = styled.div`
     color: white;
 `
 
-export default function Section(props: any) {
+const Section: React.FC<SectionProps> = ({ id, title, content }) => {
     return (
-        <TagSection>
+        <TagSection id={id}>
             <Content>
                 <Description>
-                    <h1>{props.title}</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Repellat eveniet eligendi facere rem praesentium enim iure dolore provident quas quidem vel minima, 
-                        cumque pariatur, accusantium beatae veritatis. Sapiente, doloremque rem.
-                    </p>
+                    <h1>{title}</h1>
+                    <p>{content}</p>
                 </Description>
                 <div>
                     <img src="/pcGamer.png" alt="pcGamer" width={400} height={400}/>
@@ -40,3 +42,5 @@ export default function Section(props: any) {
         </TagSection>
     )
 }
+
+export default Section;
