@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <>
       <Header/>
-      <Section/>
-      <Section/>
-      <Section/>
+      <Section title="PC TOP"/>
+      <Section title="PC + OU -"/>
+      <Section title="PC da Crise"/>
     </>
   )
 }

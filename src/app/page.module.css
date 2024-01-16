@@ -9,6 +9,7 @@
   padding: 12px 24px;
   background-color: #171614;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(94, 158, 158, 0.2);
 }
 
 .logo {

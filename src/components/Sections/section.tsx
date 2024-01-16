@@ -3,7 +3,7 @@ import styled from "styled-components"
 const TagSection = styled.section`
     display: flex;
     min-height: 100vh;
-    background-color: #101018;
+    background-color: #171614;
     align-items: center;
     justify-content: center;
 `
@@ -21,12 +21,12 @@ const Description = styled.div`
     color: white;
 `
 
-export default function Section() {
+export default function Section(props: any) {
     return (
         <TagSection>
             <Content>
                 <Description>
-                    <h1>TechGamer Consulting</h1>
+                    <h1>{props.title}</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Repellat eveniet eligendi facere rem praesentium enim iure dolore provident quas quidem vel minima, 
